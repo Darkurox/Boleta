@@ -50,7 +50,7 @@
 
             for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
                 pdf.getPage(pageNumber).then(function(page) {
-                    let scale = 1.5;
+                    let scale = 1.0; // Ajusta el valor de escala si es necesario
                     let viewport = page.getViewport({ scale: scale });
 
                     // Prepare canvas using PDF page dimensions
